@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    overflow: hidden;
     width: 300px;
     height: 300px;
     border-radius: 24px;
@@ -6,9 +8,10 @@ body{
     background-image: url('back.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-clip: content-box;
+    box-sizing: border-box;
 }
 div{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,8 +20,9 @@ div{
 }
 div p{
     padding: 10px;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     margin-inline: 5px;
     border-radius: 15px;
     background-image: linear-gradient(to right ,rgb(169, 87, 247),rgb(213, 181, 244));
+    box-shadow: 3px 3px 3px 3px gainsboro ;
 }
